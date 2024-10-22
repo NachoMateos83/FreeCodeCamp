@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css" />
+  <title>Python Technical Documentation Page</title>
+</head>
+
+<body>
+  <nav id="navbar">
+    <header>Python Documentation</header>
+    <ul id="nav-bar">
+      <li>
+        <a class="nav-link" href="#Python_Overview">Python Overview</a>
+      </li>
+      <li>
+        <a class="nav-link" href="#Introduction_to_Python">Introduction to Python</a>
+      </li>
+      <li>
+        <a class="nav-link" href="#Python_Operators">Python Operators</a>
+      </li>
+      <li>
+        <a class="nav-link" href="#Python_For_Loop">Python For Loop</a>
+      </li>
+      <li>
+        <a class="nav-link" href="#Python_Classes">Python Classes</a>
+      </li>
+      <li>
+        <a class="nav-link" href="#Python_Functions">Python Functions</a>
+      </li>
+      <li>
+        <a class="nav-link" href="#Python_Lists">Python Lists</a>
+      </li>
+      <li>
+        <a class="nav-link" href="#Tuples">Tuples</a>
+      </li>
+      <li>
+        <a class="nav-link" href="#Python_Variables">Python Variables</a>
+      </li>
+      <li>
+        <a class="nav-link" href="#References">References</a>
+      </li>
+    </ul>
+  </nav>
+  <main id="main-doc">
+    <section class="main-section" id="Python_Overview">
+      <header>Python Overview</header>
+      <article>
+        <p>The Python tutorial is constructed to teach you the fundamentals of the Python programming language. Eventually, the Python Tutorial will explain how to construct web applications, but currently, you will learn the basics of Python offline. Python can work on the Server Side (on the server hosting the website) or on your computer.</p>
+        <p>However, Python is not strictly a web programming language. That is to say, a lot of Python programs are never intended to be used online. In this Python tutorial, we will just cover the fundamentals of Python and not the distinction of the two.</p>
+        <p>Python works much like the two previous categories, PHP and ColdFusion as they are all server side programming languages. You will see from the Python tutorials that it’s syntax is extremely different than the other two. It is probably the most clean and straightforward language you will ever learn.</p>
+        <p>Just like the other languages, Python is useful because it can dynamically generate content to provide a more customized user experience. Generally, Python is a great starting language for most people, but to others, it is extremely frustrating (primarily due to spacing issues), which is why I have put the Python Tutorial at the end of the server side languages.</p>
+        <p>Enough chatter!</p>
+        <p>We want to learn Python!</p>
+      </article>
+    </section>
+    <section class="main-section" id="Introduction_to_Python">
+      <header>Introduction to Python</header>
+      <article>
+        <p>First, off Python usually requires some setup by downloading the Python IDLE. The Python IDLE is basically a text editor that lets you execute Python code. If you want to use Python as a server-side language, you certainly can. Python can output HTML just like other languages can, but Python is more commonly used as a module rather than intertwined like some PHP or ColdFusion. As for right now, I recommend you download the IDLE to help you debug your code while we learn the fundamentals offline. One really quick note, we are using python 3.2. Before we go to an example, please understand that Python is space sensitive. This means you must have 4 spaces for each indentation every single time. We’ll get into this more later, now let’s go to an example.</p>
+        <fieldset>
+          <legend>Example</legend>
+          <pre class="lang:default decode:true ">
+            <code>print ("My first Python code!")</code>
+            <code>print ("easier than I expected")</code>
+        </pre>
+        </fieldset>
+        <p>Result</p>
+        <p>My first Python Code!</p>
+        <p>easier than I expected</p>
+        <p>You can see right off the bat, that we use print() a whole lot. Basically, all it does is output whatever is inside the parentheses. You will be doing lots of printing so, you can get more comfortable with it as we go. Print is a function that we will go into later, but just understand that it can take a value. On the first line, we provide a string value “My first Python code!”, which is a string because of the quotes. So, you just told Python to output that string to the console. Python completes that task and moves onto the next line where it prints out a different string.</p>
+        <p>See how simple that was? Well, get used to it. Python is probably one of the simplest looking languages that can do some of the most powerful things you can imagine. You can see from the example how clean Python’s syntax is without all of the extra stuff that other languages add. That covers the easiest Python statement you will ever write. In the following sections, we will be using more advanced functions and teaching you the fundamentals of Python.</p>
+      </article>
+    </section>
+    <section class="main-section" id="Python_Operators">
+      <header>Python Operators</header>
+      <article>
+        <p>With every programming language we have our <strong>operators, and Python</strong> is no different. Operators in a programming language are used to vaguely describe 5 different areas: arithmetic, assignment, increment/decrement, comparison, logical. There isn’t really much need to explain all of them as I have previously in the other categories, which means we will only cover a few of them.</p>
+        <h2>Arithmetic Operators</h2>
+        <fieldset>
+          <legend>Example</legend>
+          <pre class="lang:default decode:true ">
+            <code>print (3 + 4)</code>
+            <code>print (3 - 4)</code>
+            <code>print (3 * 4)</code>
+            <code>print (3 / 4)</code>
+            <code>print (3 % 2)</code>
+            <code>print (3 ** 4) # 3 to the fourth power</code>
+            <code>print (3 // 4) #floor division</code>
+        </pre>
+        </fieldset>
+        <fieldset>
+          <legend>Result</legend><br>
+          "7"<br>
+          "-1"<br>
+          "12"<br>
+          "0.75"<br>
+          "1"<br>
+          "81"<br>
+          "0"<br>
+        </fieldset>
+        <p>See, they are pretty standard. I included how to do exponents because it’s a little funky, but other than that, they are fairly normal and work as expected. Don’t forget that you can use the + sign to concatenate strings. The addition, subtraction, multiplication, and division work just like expected. You might have not seen the modulus operator before (%). All the modulus operator does is to divide the left side by the right side and get the remainder. So, that remainder is what is returned and not the number of times the right number went into the left number The double * is just an easy way to provide exponents to Python. Finally, the floor division operator (//) just divides the number and rounds down.</p>
+        <h2>Assignment Operators</h2>
+        <p>These are pretty identical to the previous languages also, but a refresher never hurt anyone. Example please!</p>
+        <fieldset>
+          <legend>Example</legend>
+          <pre class="lang:default decode:true ">
+            <code>a = 0</code>
+            <code>a+ = 2</code>
+            <code>print = a</code></pre>
+        </fieldset>
+        <fieldset>
+          <legend>Result</legend>
+          "2"
+        </fieldset>
+        <p>Of course, you can do this with any of the previous arithmetic operators as an assignment operator followed by the = We just told Python to add 2 to the value of a without having to say something like a = a + 2. We are programmers, and we are proud to be called lazy!</p>
+      </article>
+    </section>
+    <section class="main-section" id="Python_For_Loop">
+      <header>Python For Loop</header>
+      <article>
+        <p>It’s time for an awesome part of Python. <strong>Python’s for loops</strong> are pretty amazing compared to some other languages because of how versatile and simple they are. The idea of a for loop is rather simple, you will just loop through some code for a certain number of times. I won’t get a chance to show you the flexibility of the for loops until we get into lists, but sure enough its time will come. Onto an example:</p>
+        <fieldset>
+          <legend>Example</legend>
+          <pre class="lang:default decode:true ">
+            <code>for a in range(1,3): print(a)</code>
+        </pre>
+        </fieldset>
+        <fieldset>
+          <legend>Result</legend>
+          "1"<br>
+          "2"
+        </fieldset>
+        <p>First, print is indented for a reason. Remember that Python is picky about spacing. It is somewhat complicated to understand exactly what a is in the example. In this instance, a is a variable the increments itself every time we run through the loop. Next, we use the range keyword to set the starting point and the point right after we would finish. This is precisely why the number 3 didn’t print. Python is quite fond of this idea of all the way up to a number, but not including it.</p>
+        <p>Also, notice the in keyword. This is actually part of the for loop and you will understand it a bit better after we deal with lists and dictionaries. So, basically the above for loop says, “For variable a, which will be incremented at the end of every loop, in the range of 1 up to 3.”</p>
+      </article>
+    </section>
+    <section class="main-section" id="Python_Classes">
+      <header>Python Classes</header>
+      <article>
+        <p>Well, I’m not going to lie to you. The next few tutorials are going to be rather complicated if you have never had any experience with object oriented programming (OOP). Classes are awesome because of a few reasons. First, they help you reuse code instead of duplicating the code in other places all over your program. Classes will save your life when you realize you want to change a function. You will only change it in one spot instead of 10 different spots with slightly different code. Another important part of Classes is that they allow you to create more flexible functions. First, we need to get our hands dirty and start figuring out how to make a class.</p>
+        <h2>Creating Classes in Python</h2>
+        <fieldset>
+          <legend>Example</legend>
+          <pre class="lang:default decode:true ">
+      <code>#ClassOne.py
+        class Calculator(object):
+        #define class to simulate a simple calculator
+         def __init__ (self):
+          #start with zero
+          self.current = 0
+          def add(self, amount):
+            #add number to current
+            self.current += amount
+         def getCurrent(self):
+            return self.current</code></pre>
+        </fieldset>
+        <p>Now, I’m not going to be like everyone else and start bombing terminology at you. Quite frankly, object oriented programming is rather difficult for a beginner and throwing these abstract concepts at you is just going to make you learn slower and hate OOP. So, a class is kind of like a function. We just establish it using the class keyword and following it up with whatever we want to name our class. In our case, we are making a calculator, so that’s what I called it. How original! Next, we throw in the argument of object. This is just simply a class above this class. Don’t worry much about it. It involves some serious terminology to explain. So, just type it and we will talk about it later.</p>
+        <p>Next, we get into this little guy def __init__ (self):. Abstract concept time! Objects are made from classes. So, if we had a class named cake. We could make cake objects. However, whenever you make a cake it’s not the same as the previous cake you made. Sure, it may look like it and taste like it, but it’s not that identical cake. So, in our class we have instances so that we know that they are two different cakes. Why do we need this you ask? Well, let’s make two cakes from the same class. Now, I take a big bite out of one of the cakes. Now, you definitely want to know which cake is which right? That’s why instances are so important! So, def __init__ (self): just says let’s create an instance of this class. But, why do we pass in a parameter of self, you might ask. Well, it is pretty related to what we just discussed. Classes make objects and the functions in a class become the object’s methods. However, we do need to know which class function belongs to which instance of the class, so we just implicitly pass in the objects property of self (discussed further in later example). Finally, we get down into the heart of the initialize function. Where we use self.current to create an instance variable equal to zero. Woo! We are done with the toughest part.</p>
+        <p>Next stop is the add function. We just pass in self and another parameter called amount. Again, self is so we know which instance. The amount is hopefully some number that was passed in. Using our previous knowledge, we understand that we are just adding whatever the amount is to the current variable.</p>
+        <p>Last, but certainly not least, we move onto this idea of “getting” variables from a class. To get the value of our self.current variable, we should use the best practice of putting it in a function and then calling the function to get the value so that we don’t mix up our instances. We set up the function and pass in the instance, and just tell Python to return the value.</p>
+        <h2>Using Classes in Python</h2>
+        <fieldset>
+          <legend>Example</legend>
+          <pre class="lang:default decode:true ">
+  <code>from ClassOne import * #get classes from ClassOne file
+  myBuddy = Calculator() # make myBuddy into a Calculator object
+  myBuddy.add(2) #use myBuddy's new add method derived from the Calculator class
+  print(myBuddy.getCurrent()) #print myBuddy's current instance variable</code></pre>
+        </fieldset>
+        <p>In another file, we put in this code. Once we run it, we see it prints 2 to our screen. All of that work just to get the result of 2! Anyways, let’s break this guy down. First, I have assumed that both of your classes are in the Python directory. Next, we use from ClassOne, which basically gives Python a reference to which file we are talking about. Then, we polish the statement off with import *. It just means that we want all of the classes in the file. In our case, we only have one class, the Calculator class. Next, we create an Calculator object called myBuddy by assigning it to the Calculator class with myBuddy = Calculator() . Now, this gives myBuddy all of the functions and variables in the Calculator class. (Note: once myBuddy gets those variables and functions, we call them properties and methods). Since we already initialized myBuddy, it has a property of current, and we see that property as a variable called self.current in the Calculator class that is set to 0. So, now we just call myBuddy.add(2) method, which is the add function in our Calculator class. Put simply, this is just 0 + 2. Finally, we output our instance class variable self.current by using the myBuddy.getCurrent() that returns our variable.</p>
+        <p>Well done! That was a long one. Take a breather. That’s one of the toughest concepts in programming to wrap your mind around. Believe it or not, when you use strings, lists, dictionaries, etc., they all are made from classes. From here, you should take some time and study object oriented programming and attempt to apply it in Python.</p>
+      </article>
+    </section>
+    <section class="main-section" id="Python_Functions">
+      <header>Python Functions</header>
+      <article>
+        <p><strong>Functions in Python</strong> are super useful in separating your code, but they don’t stop there. Any code that you think you will ever use anywhere else, you should probably put in a function. You can also add arguments to your functions to have more flexible functions, but we will get to that in a little bit. You can define a function by using the keyword def before your function name. Let’s use our first Python function.</p>
+        <fieldset>
+          <legend>Example</legend>
+          <pre class="lang:default decode:true ">
+          <code>def someFunction():
+    print("boo") someFunction()</code>
+          </pre>
+        </fieldset>
+        <p>Result</p>
+        <p>boo</p>
+        <p>It is necessary to define functions before they are called. Even though we have to skip over the function while reading to see the first statement, someFunction(). This throws us back up into the def someFunction():, again with a colon following it. Then after we acknowledge that the function is being called, we create a new line with four spaces for our simple print statement.</p>
+        <h2>Functions with Arguments</h2>
+        <p>Simple functions like the one above are great and can be used quite often. However, there usually comes a time where we want to have the function act on data that the user inputs. We can do this with arguments inside of the () the follows the function name.</p>
+        <fieldset>
+          <legend>Example</legend>
+          <pre class="lang:default decode:true ">
+            <code>def someFunction(a, b):
+			print(a+b)
+			someFunction(12,451)</code>
+		</pre>
+        </fieldset>
+        <p>Result</p>
+        <p>463</p>
+        <p>Using the statement someFunction(12,451), we pass in 12, which becomes a in our function, and 451, which becomes b. Then, we just have a little print statement that adds them and prints them out.</p>
+        <h2>Function Scope</h2>
+        <p>Python does support global variables without you having to explicitly express that they are global variables. It’s much easier just to show rather than explain:</p>
+        <fieldset>
+          <legend>Example</legend>
+          <pre class="lang:default decode:true ">
+			<code>def someFunction():
+			a = 10
+			someFunction()
+			print (a)</code></pre>
+        </fieldset>
+        <p>This will cause an error because our variable, a, is in the local scope of someFunction. So, when we try to print a, Python will bite and say a isn’t defined. Technically, it is defined, but just not in the global scope. Now, let’s look at an example that works.</p>
+        <fieldset>
+          <legend>Example</legend>
+          <pre class="lang:default decode:true ">
+			<code>a = 10 
+			def someFunction():
+			print (a)
+			someFunction()</code></pre>
+        </fieldset>
+        <p>In this example, we defined a in the global scope. This means that we can call it or edit it from anywhere, including inside functions. However, you cannot declare a variable inside a function, local scope, to be used outside in a global scope.</p>
+      </article>
+    </section>
+    <section class="main-section" id="Python_Lists">
+      <header>Python Lists</header>
+      <article>
+        <p>We don’t have arrays; we have <strong>Python lists</strong>. Lists are super dynamic because they allow you to store more than one “variable” inside of them. Lists have methods that allow you to manipulate the values inside them. There is actually quite a bit to show you here so let’s get to it.</p>
+        <fieldset>
+          <legend>Example</legend>
+          <pre class="lang:default decode:true ">
+  <code>sampleList = [1,2,3,4,5,6,7,8]
+  print (sampleList[1])</code></pre>
+        </fieldset>
+        <p>Result</p>
+        <p>2</p>
+        <p>The brackets are just an indication for the index number. Like most programming languages, Python’s index starting from 0. So, in this example 1 is the second number in the list. Of course, this is a list of numbers, but you could also do a list of strings, or even mix and match if you really wanted to (not the best idea though). Alright, now let’s see if we can print out the whole list.</p>
+        <fieldset>
+          <legend>Example</legend>
+          <pre class="lang:default decode:true ">
+  <code>sampleList = [1,2,3,4,5,6,7,8]
+  for a in sampleList:
+    print (a)</code></pre>
+        </fieldset>
+        <p>Result</p>
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+        <p>4</p>
+        <p>5</p>
+        <p>6</p>
+        <p>7</p>
+        <p>8</p>
+        <p>I told you we would come back to see how awesome the for loop is. Basically, variable a is the actual element in the list. We are incrementing an implicit index. Don’t get too worried about it. Just remember we are cycling through the list.</p>
+        <h2>Common List Methods</h2>
+        <p>There are several methods for lists, but we'll at least cover how to add and remove items from them. All list methods can be found on the Python documentation website. Methods follow the list name. In the listName.append(2) statement, append() is the method.</p>
+        <ul>
+          <li>.append(value) – appends element to end of the list</li>
+          <li>.count(‘x’) – counts the number of occurrences of ‘x’ in the list</li>
+          <li>.index(‘x’) – returns the index of ‘x’ in the list</li>
+          <li>.insert(‘y’,’x’) – inserts ‘x’ at location ‘y’</li>
+          <li>.pop() – returns last element then removes it from the list</li>
+          <li>.remove(‘x’) – finds and removes first ‘x’ from list</li>
+          <li>.reverse() – reverses the elements in the list</li>
+          <li>.sort() – sorts the list alphabetically in ascending order, or numerical in ascending order</li>
+        </ul>
+        <p>Try playing around with a few of the methods to get a feel for lists. They are fairly straightforward, but they are very crucial to understanding how to harness the power of Python.</p>
+      </article>
+    </section>
+    <section class="main-section" id="Tuples">
+      <header>Tuples</header>
+      <article>
+        <p>In Python, tuples are almost identical to lists. So, why should we use them you ask? The one main difference between tuples and lists are that tuples cannot be changed. That is to say you cannot add, change, or delete elements from the tuple. Tuples might seem odd at first, but there is a great reason behind them being immutable. As programmers, we mess up occasionally. We change variables that we didn’t want to change, and sometimes, well, we just want things to be constant so we don’t accidentally change them later. However, if we change our minds we can also convert tuples into lists or lists into tuples. The fact is we need to make the conscious effort to say Python, I want to change this tuple into a list so I can modify it. Enough babbling, let’s see a tuple in action!</p>
+        <h2>List vs. Tuple</h2>
+        <fieldset>
+          <legend>Example</legend>
+          <pre class="lang:default decode:true ">
+			<code>myList = [1,2,3]
+			myList.append(4)
+			print (myList)
+
+			myTuple = (1,2,3)
+			print (myTuple)
+
+			myTuple2 = (1,2,3)
+			myTuple2.append(4)
+			print (myTuple2)</code></pre>
+        </fieldset>
+        <p>Result</p>
+        <p>[1, 2, 3, 4]</p>
+        <p>(1, 2, 3)</p>
+        <p>Traceback (most recent call last):</p>
+        <p>File “C:/Python32/test”, line 9, in</p>
+        <p>myTuple2.append(4)</p>
+        <p>AttributeError: ‘tuple’ object has no attribute ‘append’</p>
+        <p>So, we see that the list clearly works as expected. We just append a 4 onto the end, and Python doesn’t miss a beat. Next, we test out our tuple declaration and it works as well. But when we try to append to the tuple, Python give us a nasty little error. Like I said, you cannot change a tuple! Python will bite you if you try using things like append on a tuple. But, let’s say “Hey, I really want to add a four to that tuple.” Let’s do it:</p>
+        <fieldset>
+          <legend>Example</legend>
+          <pre class="lang:default decode:true ">
+		<code>myTuple = (1,2,3)
+		myList = list(myTuple)
+		myList.append(4)
+		print (myList)</code>
+		</pre>
+        </fieldset>
+        <p>Result</p>
+        <p>[1, 2, 3, 4]</p>
+        <p>Boom! We have successfully undone what Python was trying to teach us not to do. We just casted the tuple into a list, then once it was a list, we used it’s append method to add the 4. It should be reiterated that the purpose of a tuple is to be immutable. If you are planning to change the variable, just use a list instead.</p>
+      </article>
+    </section>
+    <section class="main-section" id="Python_Variables">
+      <header>Python Variables</header>
+      <article>
+        <p>
+          In the heart of every good programming language, including Python, are the variables. Variables are an awesome asset to the dynamic world of the web. Variables alone are dynamic by nature. However, Python is pretty smart when it comes to variables, but it is sometimes quite a pain. Python interprets and declares variables for you when you set them equal to a value. Example:</p>
+        <fieldset>
+          <legend>Example</legend>
+          <pre class="lang:default decode:true ">
+  <code>a = 0
+  b = 2
+  print(a  + b)</code></pre>
+        </fieldset>
+        <p>Result</p>
+        <p>2</p>
+        <p>Isn’t that cool how Python figured out how a and b were both numbers. Now, let’s try it with the mindset of wanting the 0 to be a string and the 2 to also be a string to create a new string “02”.</p>
+        <fieldset>
+          <legend>Example</legend>
+          <pre class="lang:default decode:true ">
+  <code>a = "0"
+  b = "2"
+  print(a  + b)</code></pre>
+        </fieldset>
+        <p>Result</p>
+        <p>02</p>
+        <p>Ah, see! Now, it thinks they are both strings simply because we put them in quotations. Don’t worry if you don’t understand strings yet, just note that they are not numbers or integers. This is really awesome, but as with any element or practice in a programming language there is always the flip side, especially with this auto declaration thing. Suppose we started off with “0” being a string, but we change our mind and want it to be a number. Finally, we decide that we want to add it to the number 2. Python bites us with an error. This brings us to the idea of casting the variable into a certain type.</p>
+        <fieldset>
+          <legend>Example</legend>
+          <pre class="lang:default decode:true ">
+  <code>a = "0"
+  b = 2
+  print(int(a)  + b)</code></pre>
+        </fieldset>
+        <p>Result</p>
+        <p>2</p>
+        <p>Whoa, what is that int() thing? This is how you cast one variable type into another. In this example, we cast the string 0 to an integer 0. Let’s take a quick peak at a few of the important variable types in Python:</p>
+        <ul>
+          <li>int(variable) – casts variable to integer</li>
+          <li>str(variable) – casts variable to string</li>
+          <li>float(variable) – casts variable to float (number with decimal)</li>
+        </ul>
+        <p>Like I said, those are just the most commonly used types of casting. Most of the other variable types you typically wouldn’t want to cast to.</p>
+      </article>
+    </section>
+    <section class="main-section" id="References">
+      <header>References</header>
+      <article>
+        <ul>
+          <li>All the documentation in this page is taken from <a href="https://www.afterhoursprogramming.com/tutorial/python/python-overview/" target="_blank">After Hours Programming</a></li>
+        </ul>
+      </article>
+    </section>
+  </main>
+</body>
+
+</html>

@@ -1,0 +1,138 @@
+<!DOCTTYPE html>
+<html lang="en">
+	<head class="header">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>SportsCars Survey form</title>
+		<link href="styles.css" rel="stylesheet"/>
+	</head>
+	<body>
+		<main class="title of form">
+		<h1 id="title">SportCars Survey form</h1>
+		</main>
+		<p id="description">Thak you for taking the time to help us improve the platform</p>
+		<hr>
+		<br><br>
+	<form id="survey-form">
+	<div class="survey-form">
+		<label for="name" id="name-label"> Name </label>
+		<input type="text" id="name"  placeholder="Enter your name" required/>
+		<br>
+		<br>
+		<label for="email" id="email-label"> Email</label>
+		<input type="email" id="email"  placeholder="Enter your email" required/>
+		<br>
+		<br>
+		<label for="age" id="number-label" > Age (optional)</label>
+		<input type="number" id="number" placeholder="Age"required min="5" max="120"/>
+	</div>
+	<div class="role">
+		<p> Which option best describes your current role?</p>
+    	<select id="dropdown" name="role-label">
+		<option value="">Select current role</option>
+		<option>Student</option>
+		<option>Full Time Job</option>
+		<option>Full Time Learner</option>
+		<option>Prefer not to say</option>
+		<option>Other</option>
+		</select>
+	</div>
+	<div class="radio-button">
+		<p>Would you recommend SportsCars to a friend?</p>
+		<label for="definitely" class="radio-label">Definitely</label>
+		<input type="radio" id="definitely" value="definitely" name="recommend" checked>
+		<label for="maybe" class="maybe">Maybe</label>
+		<input type="radio" id="maybe" value="maybe" name="recommend">
+		<label>Not Sure</label>
+		<input type="radio" id="notsure" value="notsure" name="recommend">
+	</div>
+	<div class="checkie">
+		<p>What is your favorite type of vehicle?</p>
+		<select name="features-label">
+		<option value="">Select a option</option>
+		<option>Cabriolet</option>
+		<option>Campervan</option>
+		<option>Coupe</option>
+		<option>Hatchback</option>
+		<option>Minivan</option>
+		<option>Pickup</option>
+		<option>Sedan</option>
+		<option>Suv</option>
+		<option>Van</option>
+		</select>
+		</div>
+		<br>
+	<div class="checkbox">
+		<p>What accessories do you prefer in your car?(Check all that apply)<p>
+		<label for="big-trunk">Big Trunk</label>
+		<input id="big-trunk" type="checkbox" name="big-trunk" value="big-trunk"> 
+		<br>
+		<label for="manual-box">Manual Box</label>
+		<input id="manual-box" type="checkbox" name="manual-box" value="manual-box"> 
+		<br>
+		<label for="automatic-box">Automatic Box</label>
+		<input id="automatic-box" type="checkbox" name="automatic-box" value="automatic-box"> 
+		<br>
+		<label for="air">Air-Conditioning</label>
+		<input id="air" type="checkbox" name="Air" value="Air"> 
+		<br>
+		<label for="heating">Heating</label>
+		<input id="heating" type="checkbox" name="heating" value="heating"> 
+		<br>
+		<label for="climate-control">Automatic Climate Control</label>
+		<input id="climate-control" type="checkbox" name="climate-control" value="climate-control"> 
+		<br>
+		<label for="abs">ABS</label>
+		<input id="abs" type="checkbox" name="abs" value="abs"> 
+		<br>
+		<label for="power-steering">Power steering</label>
+		<input id="power-steering" type="checkbox" name="power-steering" value="power-steering">
+		<br> 
+		<label for="airbag">Airbag</label>
+		<input id="airbag" type="checkbox" name="airbag" value="airbag"> 
+		<br>
+		<label for="traction-control">Traction control</label>
+		<input id="traction-control" type="checkbox" name="traction-control" value="traction-control"> 
+		<br>
+		<label for="electric-window">Electric window lifters</label>
+		<input id="electric-window" type="checkbox" name="electric-window" value="electric-window"> 
+			<br>
+		<label for="central-lock">Central lock</label>
+		<input id="central-lock" type="checkbox" name="central-lock" value="central-lock">
+			<br>
+		<label for="alarm">Alarm</label>
+		<input id="alarm" type="checkbox" name="alarm" value="alarm"> 
+		<br>
+		<label for="cruise-speed">Cruise Speed</label>
+		<input id="cruise-speed" type="checkbox" name="cruise-speeds" value="cruise-speed"> 
+		<br>
+		<label for="leather-upholstery">Leather Upholstery</label>
+		<input id="leather-upholstery" type="checkbox" name="leather-upholstery" value="leather-upholsterys">
+		<br>
+		<label for="isofix">Isofix</label>
+		<input id="isofix" type="checkbox" name="isofix" value="isofix"> 
+		<br>
+		</div>
+	<div class="checkie">
+		<p>What is your favorite brand that we offer at SportsCars</p>
+		<select name="features-label">
+		<option value="">Select a option</option>
+		<option>Chevrolet</option>
+		<option>Fiat</option>
+		<option>Ford</option>
+		<option>Honda</option>
+		<option>Nissan</option>
+		<option>Peugeot</option>
+		<option>Seat</option>
+		<option>Subaru</option>
+		<option>Toyota</option>
+		</select>
+		</div>
+		<br>
+		<p>Any comments or suggestions?<p>
+			<p><textarea name="comment">Enter your comment here...</textarea></p>
+	</div>	
+		<button id="submit">Submit</button>
+	</body>
+	</form>
+  </html>

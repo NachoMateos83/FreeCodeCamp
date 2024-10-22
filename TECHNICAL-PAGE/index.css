@@ -1,0 +1,178 @@
+/* styles.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Incluye padding y border en el ancho y alto */
+}
+
+body {
+  font-family: ´Open Sans´, sans-serif;
+  color: #4d4e53;
+  min-width: 290px;
+  line-height: 1.5;
+  background-color: #ffffff;
+  z-index: 1;
+  width: 100%;
+  display: flex; /* Habilita flexbox para el body */
+  flex-direction: row; /* Ordena los elementos en una fila */
+}
+
+/* Estilos para el encabezado */
+header {
+  color: black;
+  margin: 10px;
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: thin;
+}
+
+#main-doc header {
+  text-align: left;
+  margin: 0px;
+  margin-left: 300px;
+}
+
+/* Estilos para la barra de navegación */
+#nav-bar {
+  position: sticky;
+  min-width: 290px;
+  width: 300px;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  border-color: rgba(0, 22, 22, 0.4);
+  border-right: solid;
+  background-color: white;
+  z-index: 10;
+  flex: 0 0 300px; /* Ancho fijo para la barra de navegación */
+}
+
+/* Estilos para los enlaces de navegación */
+#navbar a {
+  display: block;
+  font-size: 18px;
+  text-decoration: none;
+  padding: 10px 30px;
+  cursor: pointer;
+  color: #4d4e53;
+  transition: text-indent 0.3s ease-in-out;
+}
+
+/* Estilos para los enlaces de navegación */
+.nav-link {
+  text-decoration: none;
+  list-style: none;
+  font-family: ´Open Sans´, sans-serif;
+  font-size: 18px;
+  color: #4d4e53;
+  transition: text-indent 0.3s ease-in-out;
+  cursor: pointer;
+  border-top: 1px solid black;
+  padding: 10px 20px;
+  display: block;
+  unicode-bidi: isolate;
+}
+
+/* Estilos para la lista de navegación */
+#navbar ul {
+  height: 88%;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: block;
+}
+
+#main-doc {
+  position: absolute;
+  margin-left: 310px;
+  padding: 20px;
+  margin-bottom: 110px;
+  flex: 1; /* El contenido principal ocupará el espacio restante */
+}
+
+/* Estilos para los enlaces de navegación al pasar el ratón */
+#navbar a:hover {
+  font-weight: 500;
+  text-indent: 5px;
+}
+
+/* Estilos para el código */
+code {
+  display: block;
+  background-color: lightgray;
+  padding: 15px;
+  border-radius: 5px;
+  text-align: left;
+  white-space: pre;
+  word-break: normal;
+  word-wrap: normal;
+  margin: 10px;
+  line-height: 2;
+}
+
+/* Media queries */
+@media only screen and (max-width: 815px) {
+  body {
+    min-width: 290px;
+    color: #4d4e53;
+    background-color: #ffffff;
+    font-family: ´Open-Sans´, sans-serif;
+    line-height: 1.5;
+    margin-left: 0px;
+    overflow-x: hidden;
+  }
+
+  #navbar {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    position: relative;
+    top: 0px;
+    padding: 0;
+    margin: 0px;
+    width: 100%;
+    max-height: 275px;
+    border: none;
+    z-index: 1;
+    border-bottom: 2px solid;
+  }
+
+  #navbar ul {
+    border: 1px solid;
+    height: 207px;
+  }
+
+  #main-doc {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 270px;
+    padding: 20px; /* Agrega espacio alrededor del contenido */
+    overflow-x: hidden;
+  }
+}
+@media only screen and (max-width: 400px) {
+  #main-doc {
+    margin-left: -10px;
+    overflow-x: hidden;
+  }
+
+  code {
+    margin-left: -20px;
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+    padding-left: 10px;
+    padding-right: 45px;
+    min-width: 233px;
+  }
+
+  .nav-link {
+    display: block; /* Cambia a un diseño de bloque para una mejor usabilidad */
+    padding: 10px;
+  }
+  h2 {
+    width: auto;
+    height: auto; /* Ajusta la altura del h2 */
+    padding: 10px; /* Espacio alrededor del texto */
+  }
+}
