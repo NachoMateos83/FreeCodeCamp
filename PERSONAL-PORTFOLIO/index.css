@@ -30,6 +30,21 @@ html {
   scroll-behavior: smooth;
 }
 
+/* A few media query to set some font sizes at different screen sizes.
+ * This helps automate a bit of responsiveness.
+ * The trick is to use the rem unit for size values, margin and padding.
+ * Because rem is relative to the document font size
+ * when we scale up or down the font size on the document
+ * it will affect all properties using rem units for the values.
+*/
+
+/* I am using the em unit for breakpoints
+ * The calculation is the following
+ * screen size divided by browser base font size
+ * As an example: a breakpoint at 980px
+ * 980px / 16px = 61.25em
+*/
+
 /* 1200px / 16px = 75em */
 @media (max-width: 75em) {
   html {
@@ -50,15 +65,16 @@ html {
     font-size: 55%;
   }
 }
+
 /* Base styles */
 
 body {
   font-family: 'Poppins', sans-serif;
   font-size: 1.8rem; /* 18px */
   font-weight: 400;
-  line-height: 20.4;
+  line-height: 1.4;
   color: var(--main-white);
-}   
+}
 
 h1,
 h2 {
@@ -81,7 +97,8 @@ ul {
 
 a {
   text-decoration: none;
-  color: var(--main-white);
+  color: var(--main-red);
+  margin-right: 20px;
 }
 
 img {
@@ -98,9 +115,12 @@ img {
   top: 0;
   left: 0;
   width: 100%;
-  background: var(--main-red);
-  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
-  z-index: 10;
+  height: 10%;  
+  color: var(--main-gray);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+  z-index: 20;
+  background-color: var(--main-gray);
+
 }
 
 .nav-list {
@@ -136,8 +156,8 @@ img {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 80vh;
-  background-color: black;
+  height: 100vh;
+  background-color: #000;
   background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
 }
 
@@ -158,7 +178,7 @@ img {
 
 .projects-section-header {
   max-width: 640px;
-  margin: 0 auto 4rem auto;
+  margin: 0 auto 6rem auto;
   border-bottom: 0.2rem solid var(--main-white);
 }
 
@@ -251,7 +271,7 @@ img {
   text-align: center;
   width: 100%;
   height: 80vh;
-  padding: 2rem;
+  padding: 0 2rem;
   background: var(--main-gray);
 }
 
@@ -279,7 +299,7 @@ img {
 }
 
 .contact-details {
-  font-size: 14rem;
+  font-size: 2.4rem;
   text-shadow: 2px 2px 1px #1f1f1f;
   transition: transform 0.3s ease-out;
 }
